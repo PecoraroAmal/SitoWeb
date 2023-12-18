@@ -1,0 +1,205 @@
+/*-------------------------------------------------------------------------------- Barra di Navigazione --------------------------------------------------------------------------------*/
+nav {
+    background-color: rgba(240, 240, 240, 0); /* Sfondo semitrasparente per una buona leggibilità */
+    padding: 10px;
+    text-align: right;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 25%;
+    max-height: 10svh;
+    overflow-y: auto;
+    z-index: 3;
+    color: 0;
+    border-radius: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+header {
+    background-color: transparent; /* Sfondo trasparente */
+    padding: 20px;
+    text-align: left;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+/*-------------------------------------------------------------------------------- Sezione Home --------------------------------------------------------------------------------*/
+
+nav li-home {
+    display: inline;
+    margin-right: 20px;
+}
+nav li-home.current {
+    background-color: #000; /* Colore di sfondo per la pagina attuale */
+    border-radius: 5px; /* Aggiungi bordi arrotondati se lo desideri */
+    padding: 0 5px; /* Aggiungi padding di 5 pixel ai lati */
+}
+
+nav li-home.current a {
+    color: #fff; /* Colore del testo bianco per la pagina attuale */
+}
+
+body.background-home {
+    background-image: url('Immagini/Immagini-Home/sfondo-home.jpg'); /* Inserisci il percorso corretto per lo sfondo di Home */
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff; /* Colore del testo bianco per contrasto con lo sfondo */
+}
+
+.name-section {
+    float: left;
+    font-family: 'Lucida Handwriting', sans-serif;
+    font-size: 50px;
+    color: #000; /* Colore del testo bianco per contrasto con lo sfondo */
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+}
+
+
+
+/*-------------------------------------------------------------------------------- Sezione Anime -------------------------------------------------------------------------------- */
+nav li-anime {
+    display: inline;
+    margin-right: 20px;
+}
+nav li-anime.current {
+    background-color: #ff00ff; /* Colore di sfondo per la pagina attuale */
+    border-radius: 5px; /* Aggiungi bordi arrotondati se lo desideri */
+    padding: 0 5px; /* Aggiungi padding di 5 pixel ai lati */
+}
+
+nav li-anime.current a {
+    color: #fff; /* Colore del testo bianco per la pagina attuale */
+}
+.anime-title {
+    text-align: center;
+    color: #000; /* Colore del testo nero per contrasto con lo sfondo */
+}
+body.background-anime {
+    background-image: url('Immagini/sfondo-anime.jpg'); /* Inserisci il percorso corretto per lo sfondo di Anime */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #000; /* Colore del testo nero per contrasto con lo sfondo */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Centra la sezione principale */
+.titolo-anime{
+    text-align: left;
+    color: #000; /* Colore del testo nero per contrasto con lo sfondo */
+    margin-bottom: 0px; /* Margine inferiore per spaziare dal divisore */
+    margin-left: 20%; /* Sposta il titolo del 20% verso destra */
+}
+.animepage-description {
+    text-align: center;
+    color: #000; /* Colore del testo nero per contrasto con lo sfondo */
+    margin-bottom: 0px; /* Margine inferiore per spaziare dal divisore */
+    margin-left: 20%; /* Sposta il titolo del 20% verso sinistra */
+    margin-right: 20%; /* Sposta il titolo del 20% verso destra */
+}
+
+.main.section-anime {
+    width: 80%; /* Larghezza desiderata */
+    max-width: 1000px; /* Larghezza massima per una migliore leggibilità */
+    text-align: center;
+    margin: auto; /* Auto per centrare orizzontalmente */
+    color: #000;
+}
+
+.anime-pic {
+    margin: 0 20%; /* Margini del 10% su entrambi i lati */
+}
+
+.anime-pic img {
+    max-width: 100%; /* Assicurati che l'immagine non superi la larghezza del contenitore */
+    height: auto; /* Imposta l'altezza automaticamente per mantenere le proporzioni */
+}
+
+.anime-description {
+    text-align: left;
+    color: #000; /* Colore del testo nero per contrasto con lo sfondo */
+    margin-left: 20%; /* Sposta il titolo del 20% verso sinistra */
+    margin-right: 20%; /* Sposta il titolo del 20% verso destra */
+}
+.anime-divider{
+    margin-left: 15%; /* Sposta il titolo del 20% verso sinistra */
+    margin-right: 15%; /* Sposta il titolo del 20% verso destra */
+}
+/*-------------------------------------------------------------------------------- Sezione Videogiochi --------------------------------------------------------------------------------*/
+nav li-videogiochi {
+    display: inline;
+    margin-right: 20px;
+}
+nav li-videogiochi.current {
+    background-color: #00ff00; /* Colore di sfondo per la pagina attuale */
+    border-radius: 5px; /* Aggiungi bordi arrotondati se lo desideri */
+    padding: 0 5px; /* Aggiungi padding di 5 pixel ai lati */
+}
+
+nav li-videogiochi.current a {
+    color: #fff; /* Colore del testo bianco per la pagina attuale */
+}
+.videogiochi-title {
+    text-align: center;
+    color: #000; /* Colore del testo nero per contrasto con lo sfondo */
+}
+body.background-videogiochi {
+    background-image: url('Immagini/sfondo-videogiochi.jpg'); /* Inserisci il percorso corretto per lo sfondo di Anime */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #000; /* Colore del testo nero per contrasto con lo sfondo */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titolo-videogiochi{
+    text-align: left;
+    color: #000; /* Colore del testo nero per contrasto con lo sfondo */
+    margin-bottom: 0px; /* Margine inferiore per spaziare dal divisore */
+    margin-left: 20%; /* Sposta il titolo del 20% verso destra */
+}
+
+.main.section-videogiochi {
+    width: 80%; /* Larghezza desiderata */
+    max-width: 1000px; /* Larghezza massima per una migliore leggibilità */
+    text-align: center;
+    margin: auto; /* Auto per centrare orizzontalmente */
+    color: #000;
+}
+
+.videogiochi-pic {
+    margin: 0 20%; /* Margini del 10% su entrambi i lati */
+}
+
+.videogiochi-pic img {
+    max-width: 100%; /* Assicurati che l'immagine non superi la larghezza del contenitore */
+    height: auto; /* Imposta l'altezza automaticamente per mantenere le proporzioni */
+}
+
+.videogiochi-description {
+    text-align: left;
+    color: #000; /* Colore del testo nero per contrasto con lo sfondo */
+    margin-left: 20%; /* Sposta il titolo del 20% verso sinistra */
+    margin-right: 20%; /* Sposta il titolo del 20% verso destra */
+}
