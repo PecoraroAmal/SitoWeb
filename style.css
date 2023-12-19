@@ -36,22 +36,22 @@ header {
 
 /*-------------------------------------------------------------------------------- Sezione Home --------------------------------------------------------------------------------*/
 
-nav li-index {
+nav li-home {
     display: inline;
     margin-right: 20px;
 }
-nav li-index.current {
+nav li-home.current {
     background-color: #000; /* Colore di sfondo per la pagina attuale */
     border-radius: 5px; /* Aggiungi bordi arrotondati se lo desideri */
     padding: 0 5px; /* Aggiungi padding di 5 pixel ai lati */
 }
 
-nav li-index.current a {
+nav li-home.current a {
     color: #fff; /* Colore del testo bianco per la pagina attuale */
 }
 
-body.background-index {
-    background-image: url('Immagini/Immagini-Home/sfondo-index.jpg'); /* Inserisci il percorso corretto per lo sfondo di Home */
+body.background-home {
+    background-image: url('Immagini/Immagini-Home/sfondo-home.jpg'); /* Inserisci il percorso corretto per lo sfondo di Home */
     background-size: auto;
     background-position: center;
     background-repeat: no-repeat;
